@@ -13,6 +13,45 @@
         <label for="password">Password:</label>
         <input type="password" id="password" name="password">
         <input type="submit" value="Login">
+
+        <p>Select your favorite programming languages</p>
+        <label>
+            <input type="checkbox" name="languages" value="JavaScript" checked> JavaScript
+        </label>
+        <label>
+            <input type="checkbox" name="languages" value="Java"> Java
+        </label>
+        <label>
+            <input type="checkbox" name="languages" value="Ruby"> Ruby
+        </label>
+        <label>
+            <input type="checkbox" name="languages" value="Python"> Python
+        </label>
+        <label>
+            <input type="checkbox" name="languages" value="PHP"> PHP
+        </label>
+
+        <p>What do you prefer?</p>
+        <label>
+            Front-End <input type="radio" name="type" value="frontend">
+        </label>
+        <label>
+            Back-End <input type="radio" name="type" value="type" value="backend">
+        </label>
+
+        <label for="framework">Select your favorite framework</label>
+        <select name="framework" id="framework">
+            <option value="bootstrap">Bootstrap</option>
+            <option value="spring" selected>Spring</option>
+            <option value="react">React</option>
+        </select>
+
+        <label for="library">Select your favorite libraries:</label>
+        <select name="library" id="library" multiple>
+            <option value="jquery">jQuery</option>
+            <option value="thymeleaf">Thymeleaf</option>
+            <option value="momentjs" selected>Moment JS</option>
+        </select>
     </form>
 </body>
 </html>
