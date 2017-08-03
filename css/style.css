@@ -2,7 +2,87 @@
 this file is named "style.css" and is in a directory named "css"
 */
 
-.fancy-header {
-    color: purple;
+/*
+ Color Palette:
+ HEX: #a89d9c       darkish gray
+ HEX: #9ca7a8       grayish blue
+ HEX: #9d9ca8       grayish purple
+ HEX: #a7a89c       grayish green
+*/
+
+body {
+    background-image: url("../img/3px-tile-tiny-dark-square-tiles-seamless-pattern.jpg");
+    font-weight: 300;
+}
+
+header, footer {
+    background-color: #000;
+}
+
+body, a {
+    color: #aaa;
+    font-family: 'Open Sans', sans-serif;
+}
+
+header h1 {
+    text-align: center;
+}
+
+h1, h2, h3, h4, h5, h6 {
     text-decoration: underline;
+    font-family: 'Archivo', sans-serif;
+    font-weight: bold;
+}
+
+h1 {
+    color: #9ca7a8;
+}
+
+h2 {
+    color: #a7a89c;
+}
+
+ul {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+    font-weight: 400;
+    color: #a89d9c;
+}
+
+table {
+    border-collapse: collapse;
+}
+
+table tr:first-child {
+    background-color: #000000;
+    border-bottom: 2px solid #aaa;
+}
+
+td {
+    text-align: center;
+    padding: .25em 2em;
+}
+
+td:first-child {
+    border-right: 1px solid #aaa;
+}
+
+td:last-child {
+    border-left: 1px solid #aaa;
+}
+
+a:visited {
+    color: #9ca7a8;
+}
+
+a:hover {
+    color: #9d9ca8;
+    font-weight: bold;
+}
+
+a:active {
+    color: #a7a89c;
 }
