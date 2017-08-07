@@ -1,0 +1,58 @@
+/*
+	Menu Column background color: #999F8E
+	Content Column background color: #D2D8C7
+	Website Logo (h1) color: #002E16
+*/
+body {
+	font-family: 'Trebuchet MS', verdana, sans-serif;
+	margin: 0;
+	padding: 0;
+}
+
+.nav-menu, main {
+	height: 100%;
+	box-sizing: border-box;
+	padding: 1.5rem;
+}
+
+main {
+	width: 80%;
+	background-color: #D2D8C7;
+	position: absolute;
+	left: 20%;
+
+}
+
+.nav-menu {
+	width: 20%;
+	background-color: #999F8E;
+	position: absolute;
+	left: 0;
+}
+
+.nav-menu ul {
+	width: 100%;
+	padding-left: 0;
+	margin: 0;
+}
+
+nav li {
+	list-style-type: none;
+	padding-left: 0;
+	text-align: center;
+	font-size: 1.5rem;
+	margin-top: .5rem;
+}
+
+nav li:first-child {
+	margin-top: 0;
+}
+
+nav a {
+	color: black;
+}
+
+#logo {
+	color: #002E16;
+	margin-top: 0;
+}
