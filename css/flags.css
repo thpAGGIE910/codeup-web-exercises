@@ -1,0 +1,74 @@
+
+
+.flag {
+    width: 180px;
+    height: 120px;
+    border: 1px solid #000000;
+    position: relative;
+    display: inline-block;
+    margin: 13px 10px 13px 15px;
+}
+
+/*USA Flag*/
+
+/*Japan Flag*/
+#japan {
+    background-color: #ffffff;
+}
+
+#rising-sun {
+    position: relative;
+    width: 60px;
+    height: 60px;
+    top: 30px;
+    left: 60px;
+    background-color: red;
+    border-radius: 50%;
+}
+
+
+
+/*Russia Flag*/
+#russia>.hbar {
+    height: 40px;
+    width: 100%;
+    float: left;
+}
+
+#russia>.hbar:first-child {
+    background-color: blue;
+    margin-top: 40px;
+}
+
+#russia>.hbar:last-child {
+    background-color: red;
+}
+
+#ireland>.vbar {
+    width: 33%;
+    height: inherit;
+}
+
+#ireland>.vbar:first-child {
+    float: left;
+    background-color: #169B62;
+}
+
+#ireland>.vbar:last-child {
+    float: right;
+    background-color: #FF883E;
+}
+
+#switzerland {
+    background-color: #ff0000;
+}
+
+#switzerland>.vbar {
+    position: relative;
+    width: 26px;
+    height: 50%;
+    background-color: #fff;
+    top: 25%;
+}
+
+
