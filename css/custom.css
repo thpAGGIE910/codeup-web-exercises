@@ -1,5 +1,6 @@
 .jumbotron {
-    background-image: url("../img/pizza.png");
+    background: #fff url("../img/pizza.png") no-repeat left top;
+    background-size: 100%;
 }
 
 .jumbotron>h1 {
