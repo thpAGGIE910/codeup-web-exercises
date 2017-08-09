@@ -63,12 +63,36 @@
     background-color: #ff0000;
 }
 
-#switzerland>.vbar {
+#switzerland>.cross {
     position: relative;
-    width: 26px;
-    height: 50%;
-    background-color: #fff;
     top: 25%;
+    width: 60px;
+    height: 50%;
+    margin: 0 auto;
+    background-color: #fff;
+}
+
+#switzerland .cross .rectangle {
+    background-color: #ff0000;
+    width: 35%;
+    height: 35%;
+    position: absolute;
+}
+
+.top {
+    top: 0;
+}
+
+.bottom {
+    bottom: 0;
+}
+
+.left {
+    left: 0;
+}
+
+.right {
+    right: 0;
 }
 
 
