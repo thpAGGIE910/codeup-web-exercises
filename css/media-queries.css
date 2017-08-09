@@ -53,13 +53,26 @@ h1 {
 #social-media-links>ul {
     list-style-type: none;
     overflow: auto;
+    padding-left: 0;
 }
 
 #social-media-links li {
     display: inline-block;
-    float: right;
+    width: 12%;
     font-size: 2.5em;
-    padding-right: .75em;
+    text-align: center;
+}
+
+#social-media-links li:first-child {
+    margin-left: 32%;
+}
+
+#social-media-links li:last-child {
+    margin-right: 32%;
+}
+
+footer p {
+    text-align: center;
 }
 
 @media screen and (min-width: 426px) {
@@ -89,5 +102,21 @@ h1 {
         background-color: transparent;
         padding: .2em;
         line-height: 2em;
+    }
+
+    footer p {
+        text-align: left;
+    }
+
+    #social-media-links>ul {
+        list-style-type: none;
+        overflow: auto;
+    }
+
+    #social-media-links li {
+        display: inline-block;
+        float: right;
+        font-size: 2.5em;
+        padding-right: .75em;
     }
 }
