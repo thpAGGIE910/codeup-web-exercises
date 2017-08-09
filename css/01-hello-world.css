@@ -12,22 +12,19 @@ body {
 .nav-menu, main {
 	height: 100%;
 	box-sizing: border-box;
+	display: block;
 	padding: 1.5rem;
+	float: left;
 }
 
 main {
 	width: 80%;
 	background-color: #D2D8C7;
-	position: absolute;
-	left: 20%;
-
 }
 
 .nav-menu {
 	width: 20%;
 	background-color: #999F8E;
-	position: absolute;
-	left: 0;
 }
 
 .nav-menu ul {
