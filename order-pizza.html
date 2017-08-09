@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pizza World - Online Ordering</title>
     <link rel="stylesheet"
           href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
@@ -56,7 +57,7 @@
             <li role="presentation"><a href="#"><span class="badge">2</span> "Cheese and Sauce"</a></li>
             <li role="presentation"><a href="#"><span class="badge">3</span> "Toppings"</a></li>
         </ul>
-        <div class="panel panel-info">
+        <div class="crust-panel panel panel-info">
             <div class="panel-heading">
                 <h3 class="panel-title">Choose Size and Crust</h3>
             </div>
@@ -111,9 +112,74 @@
                 </div>
             </div>
             <div class="panel-footer clearfix">
-                <button class="btn btn-primary pull-right">
+                <button type="button" class="btn btn-primary pull-right">
                     Next Step <span class="glyphicon glyphicon-triangle-right"></span>
                 </button>
+            </div>
+        </div>
+        <div class="cheese-panel panel panel-info">
+            <div class="panel-heading">
+                <h3 class="panel-title">Choose Cheese &amp; Sauce</h3>
+            </div>
+            <div class="panel-body">
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h3 class="panel-title">Cheese?</h3>
+                    </div>
+                    <div class="panel-body bg-info">
+                        <label for="cheese-amt"><strong class="text-info">Cheese</strong></label>
+                        <select name="cheese" id="cheese-amt" class="form-control">
+                            <option value="light">Light</option>
+                            <option value="norm">Normal</option>
+                            <option value="xtra">Extra</option>
+                            <option value="2X">Double</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h3 class="panel-title">Sauce?</h3>
+                    </div>
+                    <ul class="list-group">
+                        <li class="list-group-item list-group-item-info">
+                            <label for="sauce-type"><strong class="text-info">Sauce</strong></label>
+                            <select name="sauce-type" id="sauce-type" class="form-control">
+                                <option value="tomato">Tomato Sauce</option>
+                                <option value="marinara">Marinara Sauce</option>
+                                <option value="bbq">BBQ Sauce</option>
+                                <option value="alfredo">Alfredo Sauce</option>
+                            </select>
+                        </li>
+                        <li class="list-group-item list-group-item-info">
+                            <label for="sauce-amt"><strong class="text-info">How much?</strong></label>
+                            <select name="sauce-type" id="sauce-amt" class="form-control">
+                                <option value="light">Light</option>
+                                <option value="normal">Normal</option>
+                                <option value="extra">Extra</option>
+                            </select>
+                        </li>
+                    </ul>
+                    <!--<div class="panel-body bg-info">-->
+                        <!--<label for="cheese-amt"><strong class="text-info">Cheese</strong></label>-->
+                        <!--<select name="cheese" id="cheese-amt" class="form-control">-->
+                            <!--<option value="light">Light</option>-->
+                            <!--<option value="norm">Normal</option>-->
+                            <!--<option value="xtra">Extra</option>-->
+                            <!--<option value="2X">Double</option>-->
+                        <!--</select>-->
+                    <!--</div>-->
+                </div>
+            </div>
+            <div class="panel-footer clearfix">
+                <div class="btn-group pull-right">
+                <button type="button" class="btn btn-primary">
+                    <span class="glyphicon glyphicon-triangle-left"></span> Previous Step
+                </button>
+                <button type="button" class="btn btn-primary">
+                    Next Step <span class="glyphicon glyphicon-triangle-right"></span>
+                </button>
+                </div>
             </div>
         </div>
     </main>
