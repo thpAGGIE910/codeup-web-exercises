@@ -1,13 +1,21 @@
-.jumbotron {
+.hero-pizza {
     background: #fff url("../img/pizza.png") no-repeat left top;
     background-size: 100%;
 }
 
-.jumbotron>h1 {
+.hero-pizza-title {
     text-align: center;
     width: 100%;
-    background-color: rgba(249, 249, 249, .6);
+    background-color: #ffffff;
     padding-top: .25em;
     padding-bottom: .25em;
-    color: rgba(0, 0, 0, .6);
+    opacity: .7;
 }
+
+@media screen and (min-width: 768px) and (max-width: 800px) {
+    .nav.navbar-right a {
+        padding-left: 0;
+        padding-right: 0;
+    }
+}
+
