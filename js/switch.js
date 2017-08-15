@@ -128,3 +128,18 @@ switch (luckyNumber) {
 
 totalAfterDiscount = receiptAmt * (1 - discountPercentage);
 console.log('Grand Total: $' + totalAfterDiscount.toFixed(2));
+
+var userToEnterNum = confirm('Would you like to enter a number?');
+
+if (userToEnterNum) {
+    var userInput = prompt('Please enter a number: ');
+    var userNumber = parseInt(userInput);
+
+    if (isNaN(userNumber)) {
+        alert(userInput + ' is not a number!');
+    } else {
+        alert('The number ' + userNumber + ' is ' + (((userNumber % 2) === 0) ? 'even.' : 'odd.'));
+        alert('The number ' + userNumber + ' + 100 is ' + (userNumber + 100) + '.');
+        alert('The number ' + userNumber + ' is ' + ((userNumber >= 0) ? 'positive.' : 'negative.'));
+    }
+}
