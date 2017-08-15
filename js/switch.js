@@ -38,3 +38,93 @@ switch (color) {
     // TODO: create a default case that will catch indigo and violet
     // TODO: for the default case, log: I do not know anything by that color.
 }
+
+const DISCOUNT_THRESHOLD = 200,
+      DISCOUNT_PERCENTAGE = 10;
+
+var cameronPurchases = 180,
+    ryanPurchases = 250,
+    georgePurchases = 320;
+
+var cameronDiscount = 0,
+    ryanDiscount = 0,
+    georgeDiscount = 0;
+
+
+if (cameronPurchases > DISCOUNT_THRESHOLD) {
+    cameronDiscount = cameronPurchases * (DISCOUNT_PERCENTAGE / 100);
+}
+
+if (ryanPurchases > DISCOUNT_THRESHOLD) {
+    ryanDiscount = ryanPurchases * (DISCOUNT_PERCENTAGE / 100);
+}
+
+if (georgePurchases > DISCOUNT_THRESHOLD) {
+    georgeDiscount = georgePurchases * (DISCOUNT_PERCENTAGE / 100);
+}
+
+
+//------ Word Problem 1: Discount Prices ------
+console.log('Name: Cameron');
+console.log('Price before discount: $' + cameronPurchases.toFixed(2));
+console.log('Discount: $' + cameronDiscount.toFixed(2));
+console.log('Total: $' + (cameronPurchases - cameronDiscount).toFixed(2));
+
+console.log('Name: Ryan');
+console.log('Price before discount: $' + ryanPurchases.toFixed(2));
+console.log('Discount: $' + ryanDiscount.toFixed(2));
+console.log('Total: $' + (ryanPurchases - ryanDiscount).toFixed(2));
+
+console.log('Name: George');
+console.log('Price before discount: $' + georgePurchases.toFixed(2));
+console.log('Discount: $' + georgeDiscount.toFixed(2));
+console.log('Total: $' + (georgePurchases - georgeDiscount).toFixed(2));
+
+//------ Word Problem 2: House or Car? ------
+var flipCoin = Math.floor(Math.random() * 2);
+
+if (flipCoin === 0) {
+    console.log('Buy a car');
+}
+else {
+    console.log('Buy a house');
+}
+
+// Refactor to use ternary operator
+console.log((flipCoin === 0) ? 'Buy a car' : 'Buy a house');
+
+//------ Word Problem 3: Walmart Lucky Number ------
+var luckyNumber = Math.floor(Math.random() * 6);
+
+var discountPercentage = 0;
+var receiptAmt = 60;
+var totalAfterDiscount = 0;
+
+switch (luckyNumber) {
+    case 1:
+        console.log('Your discount is 10%');
+        discountPercentage = .1;
+        break;
+
+    case 2:
+        console.log('Your discount is 25%');
+        discountPercentage = .25;
+        break;
+
+    case 4:
+        console.log('Your discount is 50%');
+        discountPercentage = .5;
+        break;
+
+    case 5:
+        console.log('Your get everything for free!!!');
+        discountPercentage = 1;
+        break;
+
+    default:
+        console.log('Sorry, you didn\'t receive a discount');
+        break;
+}
+
+totalAfterDiscount = receiptAmt * (1 - discountPercentage);
+console.log('Grand Total: $' + totalAfterDiscount.toFixed(2));
