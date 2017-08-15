@@ -39,6 +39,7 @@ switch (color) {
     // TODO: for the default case, log: I do not know anything by that color.
 }
 
+//------ Word Problem 1: Discount Prices ------
 const DISCOUNT_THRESHOLD = 200,
       DISCOUNT_PERCENTAGE = 10;
 
@@ -63,8 +64,6 @@ if (georgePurchases > DISCOUNT_THRESHOLD) {
     georgeDiscount = georgePurchases * (DISCOUNT_PERCENTAGE / 100);
 }
 
-
-//------ Word Problem 1: Discount Prices ------
 console.log('Name: Cameron');
 console.log('Price before discount: $' + cameronPurchases.toFixed(2));
 console.log('Discount: $' + cameronDiscount.toFixed(2));
