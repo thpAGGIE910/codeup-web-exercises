@@ -40,8 +40,8 @@ const MAX_NUMBER = 200;
 
 var randomNumber = Math.floor(Math.random() * (MAX_NUMBER - MIN_NUMBER)) + MIN_NUMBER;
 
-for (var i = 0; i < 10; i++) {
-    if((randomNumber % 2) == 0) {
+for (i = 0; i < 10; i++) {
+    if((randomNumber % 2) === 0) {
         console.log(randomNumber + " is even.");
     } else {
         console.log(randomNumber + " is odd.");
@@ -68,7 +68,7 @@ for (var i = 0; i < 10; i++) {
 
 var message = "";
 
-for (var i = 1; i <= 10; i++) {
+for (i = 1; i <= 10; i++) {
     var numberToPrint = (i !== 10) ? i : 0;
 
     for (var counter = 0; counter < i; counter++) {
@@ -104,6 +104,6 @@ for (var i = 1; i <= 10; i++) {
  5
  */
 
-for (var i = 20; i > 0; i--) {
+for (i = 20; i > 0; i--) {
     console.log(5 * i);
 }

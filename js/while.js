@@ -9,9 +9,11 @@ while(powersOfTwo <= 65536) {
 
 // ------ Selling Ice Cream Cones ------
 var allCones = Math.floor(Math.random() * 50) + 50;
-var cones = Math.floor(Math.random() * 5) + 1;
+var cones;
 
 do {
+    cones = Math.floor(Math.random() * 5) + 1;
+
     if(allCones >= cones) {
         allCones -= cones;
         console.log(cones + " cones sold...");
@@ -19,7 +21,7 @@ do {
         console.log("Cannot sell you " + cones + ", I only have " + allCones + "...");
     }
 
-    cones = Math.floor(Math.random() * 5) + 1;
+
 } while (allCones > 0);
 
 console.log("Yay! I sold them all!");
