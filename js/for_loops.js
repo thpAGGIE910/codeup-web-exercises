@@ -77,3 +77,33 @@ for (var i = 1; i <= 10; i++) {
     console.log(message);
     message = "";
 }
+
+// ----- Countdown from 100 ------
+/*
+ Create a for loop that uses console.log to create the output shown below.
+
+ 100
+ 95
+ 90
+ 85
+ 80
+ 75
+ 70
+ 65
+ 60
+ 55
+ 50
+ 45
+ 40
+ 35
+ 30
+ 25
+ 20
+ 15
+ 10
+ 5
+ */
+
+for (var i = 20; i > 0; i--) {
+    console.log(5 * i);
+}
