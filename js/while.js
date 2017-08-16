@@ -1,3 +1,5 @@
+"use strict";
+
 var powersOfTwo = 2;
 
 while(powersOfTwo <= 65536) {
