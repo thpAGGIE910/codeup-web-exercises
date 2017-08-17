@@ -107,3 +107,44 @@ for (i = 1; i <= 10; i++) {
 for (i = 20; i > 0; i--) {
     console.log(5 * i);
 }
+
+// ----- Extra Credit: Pyramid of Stars -----
+/*
+ Write a JavaScript program to construct the following pattern, using a nested for loop. Prompt the user the number of the final length of the stars.
+
+ Example:
+
+User input: 5
+
+Result:
+*
+* *
+* * *
+* * * *
+* * * * *
+*/
+
+var maxRows = 0;
+var validInput = false;
+message = "";
+
+do {
+    maxRows = prompt("How high should the pyramid be?");
+
+    if (isNaN(maxRows) || maxRows < 1 || maxRows > 10) {
+        alert("You did not enter a number between 1 and 10...");
+    } else {
+        validInput = true;
+    }
+} while (!validInput);
+
+console.log("User Input: " + maxRows + "\n");
+console.log("Result:\n");
+
+for (var numRows = 0; numRows < maxRows; numRows++) {
+    message = "";
+    for(var numStars = 0; numStars <= numRows; numStars++) {
+        message += "* ";
+    }
+    console.log(message);
+}
