@@ -71,6 +71,10 @@
             return 0;
         }
 
+        if (tipPercentage > 1) {
+            tipPercentage /= 100;
+        }
+
         return (tipPercentage * totalBill).toFixed(2);
     }
 
@@ -81,10 +85,6 @@
      */
     var billToTip = Number(prompt("How much was your bill?"));
     var tipToUse = Number(prompt("Tip Percentage?"));
-
-    if (tipToUse > 1) {
-        tipToUse /= 100;
-    }
 
     alert("You should tip the server $" + calculateTip(billToTip, tipToUse));
 })();
