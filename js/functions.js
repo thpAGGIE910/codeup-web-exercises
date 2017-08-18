@@ -10,6 +10,10 @@
      *  > sayHello("codeup") // returns "Hello, codeup!"
      */
     function sayHello(name) {
+        if(!name) {
+            return "Hello!";
+        }
+
         return ("Hello, " + name + "!");
     }
 
@@ -63,10 +67,12 @@
      *  > calculateTip(0.20, 20) // returns 4
      */
     function calculateTip(tipPercentage, totalBill) {
+        if (tipPercentage === 0 || totalBill <= 0) {
+            return 0;
+        }
+
         return (tipPercentage * totalBill).toFixed(2);
     }
-
-    console.log(calculateTip(.18, 32.50));
 
     /**
      * TODO: use prompt and alert in combination with your calculateTip function to
@@ -75,6 +81,10 @@
      */
     var billToTip = Number(prompt("How much was your bill?"));
     var tipToUse = Number(prompt("Tip Percentage?"));
+
+    if (tipToUse > 1) {
+        tipToUse /= 100;
+    }
 
     alert("You should tip the server $" + calculateTip(billToTip, tipToUse));
 })();
