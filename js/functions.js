@@ -29,23 +29,28 @@
     helloMessage = sayHello(myName);
     console.log(helloMessage);
 
-// Don't modify the following line, it generates a random number between 1 and
-// 100 and stores it in a variable named random
-var random = Math.floor((Math.random() * 100) + 1);
+    // Don't modify the following line, it generates a random number between 1 and
+    // 100 and stores it in a variable named random
+    var random = Math.floor((Math.random() * 100) + 1);
 
-/**
- * TODO:
- * Create a function called 'isOdd' that takes a number as a parameter.
- * The function should use the ternary operator to return a message.
- * The message should contain the number being checked, and whether or not the
- * number is odd
- *
- * Example
- *  > isOdd(42) // returns "42 is not odd!"
- *
- * Call the function 'isOdd' passing the variable 'random' as a parameter.
- * console.log *outside of the function* to check your work
- */
+    /**
+     * TODO:
+     * Create a function called 'isOdd' that takes a number as a parameter.
+     * The function should use the ternary operator to return a message.
+     * The message should contain the number being checked, and whether or not the
+     * number is odd
+     *
+     * Example
+     *  > isOdd(42) // returns "42 is not odd!"
+     *
+     * Call the function 'isOdd' passing the variable 'random' as a parameter.
+     * console.log *outside of the function* to check your work
+     */
+    function isOdd(numberToTest) {
+        return numberToTest + (numberToTest % 2 === 1 ?  " is odd!" : " is not odd!");
+    }
+
+    console.log(isOdd(random));
 
 /**
  * TODO: Create a function named 'calculateTip' to calculate a tip on a bill at a
