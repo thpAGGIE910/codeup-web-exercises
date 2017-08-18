@@ -52,20 +52,29 @@
 
     console.log(isOdd(random));
 
-/**
- * TODO: Create a function named 'calculateTip' to calculate a tip on a bill at a
- * restaurant
- *
- * the function should accept a tip percentage and the total of the bill, and
- * return the amount to tip
- *
- * Example
- *  > calculateTip(0.20, 20) // returns 4
- */
+    /**
+     * TODO: Create a function named 'calculateTip' to calculate a tip on a bill at a
+     * restaurant
+     *
+     * the function should accept a tip percentage and the total of the bill, and
+     * return the amount to tip
+     *
+     * Example
+     *  > calculateTip(0.20, 20) // returns 4
+     */
+    function calculateTip(tipPercentage, totalBill) {
+        return (tipPercentage * totalBill).toFixed(2);
+    }
 
-/**
- * TODO: use prompt and alert in combination with your calculateTip function to
- * prompt the user for the bill total and a percentage they would like to tip,
- * then display the dollar amount they should tip
- */
+    console.log(calculateTip(.18, 32.50));
+
+    /**
+     * TODO: use prompt and alert in combination with your calculateTip function to
+     * prompt the user for the bill total and a percentage they would like to tip,
+     * then display the dollar amount they should tip
+     */
+    var billToTip = Number(prompt("How much was your bill?"));
+    var tipToUse = Number(prompt("Tip Percentage?"));
+
+    alert("You should tip the server $" + calculateTip(billToTip, tipToUse));
 })();
