@@ -1,7 +1,10 @@
 "use strict";
 
-$(document).ready(function () {
+(function () {
+    $(document).ready(function () {
 
-    alert("The DOM has finished loading!!!");
+        alert("The DOM has finished loading!!!");
 
-});
+    });
+})();
+
