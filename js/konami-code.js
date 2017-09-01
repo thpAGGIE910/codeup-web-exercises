@@ -19,7 +19,6 @@
         extraLivesAudioClip.addEventListener("ended", function() {
             alert("You get 30 lives!!!!!");
             this.currentTime = 0;
-            keyInSequence = 0;
         });
 
         $("body").on('keydown', function (evt) {
@@ -27,6 +26,7 @@
                 keyInSequence++;
 
                 if (keyInSequence >= KONAMI_CODE.length) {
+                    keyInSequence = 0;
                     extraLivesAudioClip.play();
                 }
 
