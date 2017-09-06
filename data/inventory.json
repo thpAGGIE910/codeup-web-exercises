@@ -30,5 +30,13 @@
             "tool"
         ],
         "price": 10
+    }, {
+        "title": "Wire Cutter",
+        "quantity": 3,
+        "categories": [
+            "tool",
+            "electrical"
+        ],
+        "price": 4.50
     }
 ]
