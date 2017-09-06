@@ -2,7 +2,9 @@
     "use strict";
 
     $(document).ready(function () {
-        $(".faq-question a").click(function(e) {
+        const RESGISTRATION_PROMPT_DELAY = 8000;
+
+        $(".faq-question a").click(function (e) {
             e.preventDefault();
 
             $(this).parent().next(".faq-answer").toggleClass("invisible");
@@ -16,10 +18,26 @@
 
         $(".facts-title").click(function () {
             $(this).next().children().css("font-weight", "bold");
+            $(this).next(".facts-list").slideToggle();
         });
 
         $(".facts-list-item").click(function () {
             $(this).parent().children().first().css("color", "blue");
+        });
+
+        $(".newsletter-signup-container .close-btn").click(function () {
+            $(this).parent().hide();
+        });
+
+
+
+        setTimeout(function () {
+            $(".registration-modal").fadeIn();
+
+        }, 3000);
+
+        $(".registration-modal .close-btn").click(function () {
+            console.log("Button clicked");
         });
     });
 })();

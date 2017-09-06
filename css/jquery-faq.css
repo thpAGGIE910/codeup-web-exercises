@@ -2,10 +2,63 @@ body {
     font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
 }
 
+.newsletter-signup-container, .registration-modal {
+    position: relative;
+}
+
+.newsletter-signup-container .close-btn {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    font-size: 2em;
+    cursor: pointer;
+}
+
 .faq-question a{
     color: black;
     font-weight: bold;
     font-size: 2em;
+}
+
+.facts-list {
+    display: none;
+}
+
+.facts-title::after {
+    margin: 5px;
+    content: "\25BE";
+}
+.registration-modal {
+    /*display: none;*/
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, .4);
+}
+
+
+.registration-modal-message {
+    position: relative;
+    width: 40%;
+    height: 10vh;
+    margin: 30vh auto 0 auto;
+    background-color: #FFF;
+}
+
+.registration-modal-message .close-btn {
+    position: absolute;
+    top: 0;
+    right: 5px;
+    font-size: 1.5em;
+    cursor: text;
+}
+
+.registration-modal-message p {
+    position: relative;
+    padding-top: 10px;
+    padding-left: 5px;
 }
 
 .invisible {
